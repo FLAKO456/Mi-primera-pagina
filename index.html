@@ -1,6 +1,30 @@
 <!DOCTYPE html>
-<head><title>Mi primera pagina</title></head>
+<html>
+<head>
+<title>FLAKO456 - Mi Mundo</title>
+<style>
+body { background: black; color: #00ff00; font-family: monospace; text-align: center; padding: 50px, }
+h1 { font-size: 50px; text-shadow: 0 0 10px #00ff00; }
+.card { border: 2px solid #00ff00; border-radius: 15px; padding: 20px; margin: 20px auto; max-width: 500px; box-shadow: 0 0 20px #00ff00; }
+a { color: black; background: #00ff00; padding: 10px 20px; text-decoration: none; border-radius: 10px; font-weight: bold; display: inline-block; margin-top: 15px; }
+a:hover { background: white; }
+</style>
+</head>
 <body>
-    <h1>Hola, soy PEPE y este es mi primer repo con Git</h1>
+<h1>FLAKO456</h1>
+<p>Bienvnido a mi primera pagina web</p>
+<div class="card">
+<h2> Sobre Mi</h2>
+<p> Soy FLAKO456, aprendiendo aprogramar y dominando el mundo del codigo.</p>
+<p>Esta es mi primera pagina hecha con HTML, Git y GitHub.</p>
+<a href="https://github.com/FLAKO456">Mi GitHub</a>
+</div>
+<div class="card">
+<p>Hecho con desde PUEBLA</p>
+<p id="hora"></p>
+</div>
+<script>
+setInterval(()=>{document.getElementById(`hora`).innerText = new Date().toLocaleString()},1000)
+</script>
 </body>
-</html>SS
+</html>
